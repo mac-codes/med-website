@@ -39,7 +39,7 @@ const NavLink = styled.a`
 function Header() {
   return (
     <HeaderContainer>
-      <Logo src="../../client/images/logo.jpeg" alt="Company Logo" />
+      <Logo src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png" alt="Company Logo" />
       <NavLinks>
         <li><NavLink href="#">Home</NavLink></li>
         <li><NavLink href="#">About</NavLink></li>
