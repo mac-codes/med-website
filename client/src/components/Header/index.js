@@ -41,10 +41,10 @@ function Header() {
     <HeaderContainer>
       <Logo src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png" alt="Company Logo" />
       <NavLinks>
-        <li><NavLink href="#">Home</NavLink></li>
-        <li><NavLink href="#">About</NavLink></li>
-        <li><NavLink href="#">Services</NavLink></li>
-        <li><NavLink href="#">Blog</NavLink></li>
+        <li><NavLink href="/">Home</NavLink></li>
+        <li><NavLink href="/about">About</NavLink></li>
+        <li><NavLink href="/services">Services</NavLink></li>
+        <li><NavLink href="/blog">Blog</NavLink></li>
       </NavLinks>
     </HeaderContainer>
   );
