@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -7,7 +8,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   flex-direction: column;
   height: 120px;
-  background-color: aliceblue;
+  background-color: #f2f2f2;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 `;
 
@@ -25,7 +26,7 @@ const NavLinks = styled.ul`
   font-family: 'Phudu', cursive;
 `;
 
-const NavLink = styled.a`
+const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
   color: #333333;
   font-weight: 500;
@@ -41,10 +42,10 @@ function Header() {
     <HeaderContainer>
       <Logo src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png" alt="Company Logo" />
       <NavLinks>
-        <li><NavLink href="/">Home</NavLink></li>
-        <li><NavLink href="/about">About</NavLink></li>
-        <li><NavLink href="/services">Services</NavLink></li>
-        <li><NavLink href="/blog">Blog</NavLink></li>
+        <li><NavLinkStyled exact to="/">Home</NavLinkStyled></li>
+        <li><NavLinkStyled to="/about">About</NavLinkStyled></li>
+        <li><NavLinkStyled to="/services">Services</NavLinkStyled></li>
+        <li><NavLinkStyled to="/contact">Contact Us</NavLinkStyled></li>
       </NavLinks>
     </HeaderContainer>
   );

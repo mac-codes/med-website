@@ -12,6 +12,12 @@ height: 100vh;
 background-color: aliceblue;
 `;
 
+const Section = styled.div`
+  border: 1px solid #e6ccb2;
+  padding: 10px;
+  margin: 10px;
+`;
+
 const Title = styled.div`
 text-align: center;
 font-size: 30px;
@@ -29,14 +35,30 @@ const MedCard = styled.div`
   margin: .5em;
 `;
 
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: #fff;
+`;
+
+
 function Home() {
   return (
     <Container>
+      <Section>
       <Title>Our Approach</Title>
       <Paragraph>The experimental medicine company is owned by an individual who is committed to improving the mental health of her hometown. The company is focused on developing innovative treatments and therapies for a range of mental health disorders, including anxiety, depression, bipolar disorder, and schizophrenia.</Paragraph>
       <Paragraph>The company's approach is based on cutting-edge research in neuroscience and psychology, and it works closely with leading experts in the field to identify promising new approaches to treatment. In addition to developing new drugs and therapies, the company also invests in education and outreach programs to raise awareness about mental health issues and promote access to care.</Paragraph>
       <Paragraph>The company's mission is to make a real difference in the lives of people struggling with mental health disorders, and to contribute to a broader movement to reduce stigma and improve mental health outcomes in the community. Through its innovative research and commitment to social responsibility, the company is poised to become a leader in the field of mental health care.</Paragraph>
+      </Section>
 
+<CardContainer>
+      <Section>
       <MedCard style={{ width: '15rem' }}>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
@@ -79,6 +101,8 @@ function Home() {
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </MedCard>
+        </Section>
+        </CardContainer>
     </Container>
   );
 }
